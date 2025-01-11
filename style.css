@@ -1,0 +1,479 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #efdbab;
+  box-shadow: 7px 9px 19.3px -2px rgba(67, 4, 4, 0.3);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+header img {
+  flex-shrink: 0;
+  height: auto;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #9c2b00;
+}
+
+/* Hero Section */
+section {
+  width: 100%; /* Adapta o tamanho da seção ao viewport */
+  padding: 10px 15px; /* Margens menores */
+  box-sizing: border-box;
+}
+
+.hero {
+  background: url("./assets/banner.png") no-repeat center center/cover;
+  padding: 50px;
+  color: #fff;
+  height: auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.hero h2 {
+  color: #f68b0d;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#infoBanner {
+  width: 632px;
+}
+
+#infoBanner p {
+  color: #efdbab;
+  text-align: left; /* Alinha o texto à esquerda */
+  line-height: 1.5; /* Melhora a legibilidade */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#infoBanner a {
+  display: inline-block; /* Garante que o botão se alinhe corretamente */
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#bottonPink {
+  border: 0px solid #efdbab;
+  background: #e60035;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-style: bold;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+#bottonGreen {
+  border: 0px solid #efdbab;
+  background: #f68b0d;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-style: bold;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.politicasDeSaude {
+  background-color: #efdbab;
+  padding: 20px;
+  align-items: center;
+}
+
+.politicasDeSaude h2 {
+  color: #004c00;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.politicasDeSaude p {
+  color: #802300;
+  text-align: center;
+  font-family: Agrandir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.politicasDeSaude div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cardPoliticas {
+  background-color: #004c00;
+  border-radius: 50px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  max-width: 300px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+#cardPoliticas img {
+  width: 100%;
+  max-width: 113px;
+  height: auto;
+}
+
+#cardPoliticas h3 {
+  color: #efdbab;
+  font-size: 20px;
+  text-align: center;
+}
+
+#cardPoliticas p {
+  color: #efdbab;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#cardPoliticas a {
+  color: #ffb400;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+}
+.imagem-intermediaria {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-110%);
+}
+
+.imagem-intermediaria img {
+  width: 120px;
+  height: auto;
+}
+
+/* Loja */
+.carrossel-container {
+  background-color: #f68b0d;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Garante que qualquer parte que exceda o contêiner não seja visível */
+}
+
+.carrossel {
+  display: flex; /* Exibe os produtos lado a lado */
+  gap: 20px; /* Espaço entre os itens */
+  animation: rolarProdutos 20s linear infinite; /* Animação para rolar os produtos */
+}
+
+.produto {
+  flex-shrink: 0; /* Impede que os produtos encolham */
+  width: 250px; /* Largura de cada produto */
+  text-align: center;
+}
+
+.produto img {
+  width: 100%; /* As imagens ocupam 100% da largura do item */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produto p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.priceStore {
+  font-weight: bold;
+}
+
+/* Animação para o carrossel */
+@keyframes rolarProdutos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Ajuste na rotação infinita */
+.carrossel {
+  animation: rolarProdutos 20s linear infinite;
+  width: calc(
+    250px * 5 + 20px * 4
+  ); /* Largura do carrossel: 5 produtos + espaçamento */
+}
+
+.carrossel-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrossel-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.carrossel-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ver-mais {
+  margin-top: 20px;
+}
+
+.ver-mais a {
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.loja h2 {
+  color: #004c00;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#cardProdutos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 20px;
+  min-width: 200px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+#cardProdutos img {
+  /* width: 150px; */
+  margin-bottom: 10px;
+
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#cardProdutos a {
+  justify-content: center;
+  text-decoration: none;
+}
+
+.produto {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Corrigir o valor */
+  box-sizing: border-box; /* Inclui padding e borda na largura */
+  margin: 10px auto; /* Centraliza os elementos */
+}
+
+.produto p {
+  font-size: 14px; /* Tamanho do texto */
+  text-align: center; /* Centraliza o texto */
+}
+
+#priceStore {
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+  text-align: center; /* Centraliza o preço */
+}
+
+.ver-mais a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e60035;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Selo Sankofa */
+#selo {
+  background-color: #802300;
+  text-align: center;
+}
+
+#selo h2 {
+  color: #f68b0d;
+  text-align: left;
+  margin-left: 64px;
+}
+
+#selo img {
+  width: 200px;
+  height: auto;
+}
+
+#selo {
+  padding: 20px;
+  background-color: #802300;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.content-left,
+.content-right {
+  flex: 1 1 45%; /* Ocupa 45% do espaço */
+}
+
+.content-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #f68b0d;
+}
+
+.content-left p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #efdbab;
+}
+
+.accordion .accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.accordion-body {
+  display: none;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.accordion-header.active + .accordion-body {
+  display: block;
+}
+
+.content-right img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: left;
+  background-color: #efdbab;
+  padding: 20px;
+}
+
+form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #388e3c;
+}
+
+form button:disabled {
+  cursor: not-allowed;
+  background: #333;
+}
+
+/* Sobre Nós */
+#sobre {
+  background-color: #ffdab9;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,123 @@
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  header nav ul {
+    gap: 50px; /* Reduz o espaçamento entre os links */
+  }
+
+  header img {
+    max-width: 120px; /* Reduz o tamanho da logo */
+  }
+
+  header nav ul li a {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .hero {
+    padding: 40px;
+    background-position: center top;
+  }
+
+  .hero h2 {
+    font-size: 42px; /* Reduz o tamanho do título */
+  }
+
+  #infoBanner {
+    width: 80%; /* Ajusta a largura do banner */
+  }
+
+  #infoBanner p {
+    font-size: 18px; /* Reduz o tamanho do texto */
+  }
+
+  #bottonPink,
+  #bottonGreen {
+    font-size: 10px; /* Ajusta o tamanho da fonte nos botões */
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha */
+    padding: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column; /* Empilha os links verticalmente */
+    align-items: flex-end;
+    gap: 20px; /* Reduz ainda mais o espaçamento */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  header img {
+    margin: 0 auto; /* Centraliza a logo */
+    max-width: 100px; /* Reduz ainda mais o tamanho da logo */
+  }
+
+  header nav ul li a {
+    font-size: 0.85rem; /* Tamanho menor da fonte */
+  }
+  .hero {
+    padding: 30px;
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  #infoBanner {
+    width: 100%; /* Ocupa a largura total */
+    padding: 0;
+  }
+
+  #infoBanner p {
+    font-size: 16px; /* Texto menor para telas pequenas */
+    text-align: left; /* Centraliza o texto */
+  }
+
+  #infoBanner a {
+    width: 100%; /* Botões ocupam a largura total */
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column; /* Coloca logo e menu em coluna */
+    align-items: center;
+  }
+
+  header img {
+    margin-bottom: 10px; /* Espaçamento entre logo e menu */
+  }
+
+  header nav ul {
+    align-items: center;
+    gap: 15px;
+  }
+
+  header nav ul li a {
+    font-size: 0.8rem; /* Texto menor em dispositivos muito pequenos */
+  }
+  header {
+    flex-direction: column; /* Coloca logo e menu em coluna */
+    align-items: center;
+  }
+
+  header img {
+    margin-bottom: 10px; /* Espaçamento entre logo e menu */
+  }
+
+  header nav ul {
+    align-items: center;
+    gap: 15px;
+  }
+
+  header nav ul li a {
+    font-size: 0.8rem; /* Texto menor em dispositivos muito pequenos */
+  }
+}
