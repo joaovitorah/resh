@@ -63,7 +63,7 @@ O design foi adaptado para diferentes tamanhos de tela com o uso de media querie
 
 ## Autor
 
-- **Seu Nome:** [Seu GitHub](https://github.com/seu-usuario)
+- **João Vitor Azevedo** (https://github.com/seu-usuario](https://github.com/joaovitorah)
 
 ---
 
