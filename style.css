@@ -197,7 +197,7 @@ section {
 }
 
 /* Loja */
-carrossel-container {
+.carrossel-container {
   background-color: #f68b0d;
   padding: 20px;
   text-align: center;
