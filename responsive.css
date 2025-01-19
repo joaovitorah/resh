@@ -14,10 +14,22 @@
   header nav ul li a {
     font-size: 0.9rem; /* Ajusta o tamanho da fonte */
   }
+  header nav ul {
+    display: none; /* Ocultar menu original em telas pequenas */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar botão de menu */
+  }
+
+  .menu.active {
+    display: flex; /* Exibir menu suspenso quando ativo */
+  }
 
   .hero {
     padding: 40px;
-    background-position: center top;
+    background-position: left center;
+  }
   }
 
   .hero h2 {
@@ -31,7 +43,7 @@
 
   #infoBanner p {
     font-size: 18px; /* Ajusta o tamanho do texto */
-    text-align: center; /* Centraliza o texto */
+    text-align: left; /* Centraliza o texto */
   }
 
   #bottonPink,

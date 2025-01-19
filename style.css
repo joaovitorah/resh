@@ -356,14 +356,16 @@ section {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  /flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
 }
 
 .content-left,
 .content-right {
-  flex: 1 1 45%; /* Ocupa 45% do espaço */
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  max-width: 600px;
 }
 
 .content-left h2 {
@@ -380,6 +382,7 @@ section {
 
 .accordion .accordion-item {
   margin-bottom: 10px;
+  padding: 0 20px;
 }
 
 .accordion-header {
@@ -417,9 +420,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: left;
   background-color: #efdbab;
   padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form label {
