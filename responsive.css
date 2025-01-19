@@ -36,6 +36,19 @@
   #bottonGreen {
     font-size: 10px; /* Ajusta o tamanho da fonte nos botões */
   }
+
+  .containerDePoliticas {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 card por linha */
+    gap: 24px;
+    max-width: 360px;
+    /* Espaçamento entre as linhas */
+  }
 }
 
 @media (max-width: 768px) {
