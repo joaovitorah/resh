@@ -25,29 +25,92 @@
   }
 
   #infoBanner {
-    width: 80%; /* Ajusta a largura do banner */
+    width: 90%; /* Ajusta a largura do banner */
+    margin: 0 auto; /* Centraliza o banner */
   }
 
   #infoBanner p {
-    font-size: 18px; /* Reduz o tamanho do texto */
+    font-size: 18px; /* Ajusta o tamanho do texto */
+    text-align: center; /* Centraliza o texto */
   }
 
   #bottonPink,
   #bottonGreen {
-    font-size: 10px; /* Ajusta o tamanho da fonte nos botões */
+    font-size: 12px; /* Ajusta o tamanho da fonte nos botões */
+    padding: 8px 12px;
   }
 
   .containerDePoliticas {
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center; /* Centraliza os cards */
+  }
+
+  .cardOneAOne {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .cardPoliticas {
+    flex: 1 1 calc(50% - 20px); /* Dois cards por linha */
+    max-width: 400px; /* Limita o tamanho máximo */
+    margin: 10px auto;
+  }
+  #selo {
+    padding: 10px;
   }
 
   .container {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 card por linha */
-    gap: 24px;
-    max-width: 360px;
-    /* Espaçamento entre as linhas */
+    flex-direction: column; /* Empilha as colunas */
+    gap: 15px; /* Reduz o espaçamento entre as seções */
+  }
+
+  .content-left,
+  .content-right {
+    flex: 1 1 100%; /* Ocupa toda a largura */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .content-left h2 {
+    text-align: center; /* Centraliza o título */
+    margin-left: 0; /* Remove margem lateral */
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+  }
+
+  .content-left p {
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+    margin-bottom: 15px;
+  }
+
+  .accordion-header {
+    font-size: 0.9rem; /* Reduz o tamanho do botão do accordion */
+    padding: 8px; /* Ajusta o espaçamento interno */
+  }
+
+  .content-right img {
+    max-width: 150px; /* Reduz o tamanho da imagem */
+    margin: 0 auto 10px; /* Centraliza e ajusta o espaçamento inferior */
+  }
+
+  form {
+    padding: 10px; /* Reduz o padding geral */
+    gap: 8px; /* Reduz o espaçamento entre os campos */
+  }
+
+  form label {
+    font-size: 0.85rem; /* Ajusta o tamanho das labels */
+  }
+
+  form input,
+  form textarea {
+    padding: 8px; /* Reduz o espaçamento interno dos campos */
+    font-size: 0.9rem; /* Ajusta o tamanho do texto nos campos */
+  }
+
+  form button {
+    font-size: 0.9rem; /* Ajusta o tamanho do botão */
+    padding: 8px; /* Reduz o espaçamento interno */
   }
 }
 
@@ -89,12 +152,16 @@
 
   #infoBanner p {
     font-size: 16px; /* Texto menor para telas pequenas */
-    text-align: left; /* Centraliza o texto */
   }
 
   #infoBanner a {
     width: 100%; /* Botões ocupam a largura total */
     padding: 8px 10px;
+  }
+
+  .cardPoliticas {
+    flex: 1 1 100%; /* Um card por linha */
+    margin: 10px auto;
   }
 }
 
@@ -132,5 +199,42 @@
 
   header nav ul li a {
     font-size: 0.8rem; /* Texto menor em dispositivos muito pequenos */
+  }
+
+  #infoBanner p {
+    font-size: 14px; /* Reduz ainda mais o texto */
+  }
+
+  #bottonPink,
+  #bottonGreen {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+
+  .cardPoliticas {
+    max-width: 100%; /* O card ocupa a largura total */
+    margin: 10px auto;
+  }
+
+  .content-left h2 {
+    font-size: 1.2rem; /* Título menor */
+  }
+
+  .content-left p {
+    font-size: 0.8rem; /* Texto menor */
+  }
+
+  .content-right img {
+    max-width: 120px; /* Imagem ainda menor */
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.8rem; /* Texto menor nos campos */
+  }
+
+  form button {
+    font-size: 0.85rem; /* Texto menor no botão */
+    padding: 6px; /* Reduz o espaçamento interno */
   }
 }

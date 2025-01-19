@@ -378,19 +378,27 @@ section {
   color: #efdbab;
 }
 
-.accordion .accordion-item {
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-item {
   margin-bottom: 10px;
 }
 
 .accordion-header {
-  background-color: #e91e63;
-  color: white;
+  background-color: #f68b0d;
+  color: #802300;
   padding: 10px;
   border: none;
   cursor: pointer;
   text-align: left;
   font-size: 1rem;
   border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .accordion-body {
@@ -409,6 +417,16 @@ section {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
+}
+
+.accordion-header:hover {
+  background-color: #e60035;
+}
+
+.accordion {
+  /* Garante que o contêiner do acordeão ocupe toda a largura */
+  max-width: 600px; /* Define um limite máximo para o tamanho do acordeão */
+  margin: 0 auto; /* Centraliza o acordeão na página */
 }
 
 form {
