@@ -39,6 +39,20 @@ header nav ul li a {
   color: #9c2b00;
 }
 
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #9c2b00;
+  border-radius: 5px;
+}
+
 /* Hero Section */
 section {
   width: 100%; /* Adapta o tamanho da seção ao viewport */
@@ -67,16 +81,17 @@ section {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  max-width: 580px;
 }
 
 #infoBanner {
-  width: 632px;
+  max-width: auto;
 }
 
 #infoBanner p {
   color: #efdbab;
-  text-align: left; /* Alinha o texto à esquerda */
-  line-height: 1.5; /* Melhora a legibilidade */
+  text-align: left;
+  line-height: 1.5;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

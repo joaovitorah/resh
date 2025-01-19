@@ -27,7 +27,7 @@
   }
 
   .hero {
-    padding: 40px;
+    padding: 32px;
     background-position: left center;
   }
   }
@@ -38,7 +38,7 @@
 
   #infoBanner {
     width: 90%; /* Ajusta a largura do banner */
-    margin: 0 auto; /* Centraliza o banner */
+    margin: 0 0; /* Centraliza o banner */
   }
 
   #infoBanner p {
