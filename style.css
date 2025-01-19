@@ -378,13 +378,7 @@ section {
   color: #efdbab;
 }
 
-.accordion {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.accordion-item {
+.accordion .accordion-item {
   margin-bottom: 10px;
 }
 
@@ -417,16 +411,6 @@ section {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-}
-
-.accordion-header:hover {
-  background-color: #e60035;
-}
-
-.accordion {
-  /* Garante que o contêiner do acordeão ocupe toda a largura */
-  max-width: 600px; /* Define um limite máximo para o tamanho do acordeão */
-  margin: 0 auto; /* Centraliza o acordeão na página */
 }
 
 form {
